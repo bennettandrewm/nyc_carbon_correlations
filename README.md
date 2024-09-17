@@ -1,7 +1,7 @@
 # NYC Carbon Correlations
 
 <p align="center">
-<img src="images/nyc_exhaust.jfif" width="400" height="400" />
+<img src="image_files/nyc_exhaust.jfif" width="400" height="400" />
 </p>
 
 ## Overview
