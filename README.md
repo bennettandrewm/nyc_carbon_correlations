@@ -37,9 +37,32 @@ model will prompt you to have that information.
 <br />[return to TOC](#table-of-contents-TOC)
 
 ## Data Understanding
-<br />[return to TOC](#table-of-contents-TOC)
 
-The data can be found in the following locations:
+Greenhouse Gas Emissions from Commerical and Industrial Buildings have decreased by XX% since 2005, according to the [NYC Greenhouse Gas Inventory](https://climate.cityofnewyork.us/initiatives/nyc-greenhouse-gas-inventories/). But what's driving this reduction? This study reviews annual weather, transit volumes, and building's energy and fuel sources to determined key factors. 
+
+### Data Sources
+#### Emissions  
+Emissions data was taken from the [NYC Greenhouse Gas Inventory](https://climate.cityofnewyork.us/initiatives/nyc-greenhouse-gas-inventories/) which can be found [here](https://data.cityofnewyork.us/Environment/NYC-Greenhouse-Gas-Emissions-Inventory/wq7q-htne/about_data) through the [Open NY](https://opendata.cityofnewyork.us/) website. The inventory uses entities reported fuel and electricity consumption and, based on an emissions factor, reports on a metric ton of CO2.
+
+#### Weather - HDD & CDD
+Weather - Annual heating degree days (HDD) and Cooling Degree Days (CDD) as listed on NYSERDA's website to determine how building systems would react. Data extracted from [NYSERDA](https://www.nyserda.ny.gov/About/Publications/Energy-Analysis-Reports-and-Studies/Weather-Data/Monthly-Cooling-and-Heating-Degree-Day-Data) website
+
+#### Transit volumes
+Transit volumes are used as a proxy for human activity and not transportation emissions sources. While this doesn't cover every location where people would enter the city to conduct C%I activity (NJTransit and Amtrak entry in Penn Station, for instance), it serves as a proxy for this activity.
+
+MTA Bridge & Tunnels - Toll data was used to quantify volume taken from the [MTA hourly bridges and tunnels traffic rates](https://data.ny.gov/Transportation/MTA-Bridges-Tunnels-Hourly-Traffic-Rates-Beginning/qzve-kjga/about_data). This set can be found through [Data.NY.gov](https://data.ny.gov/). Data taken through API Token
+
+Port Authority PATH Train - Total ridership data for NYC stations
+
+MTA Ridership - 
+
+#### Fuel Sources 
+Fuel source data was also taken from the [NYC Greenhouse Gas Inventory](https://climate.cityofnewyork.us/initiatives/nyc-greenhouse-gas-inventories/). Data taken through API Token
+
+### Annual Sums Limitations
+The limits with annual data are the smaller quantity of total data points. Monthly, weekly, or daily numbers would provide additional granulate to strengthen trends, inferences, or other observations. The benefit of annual data is the elimination of seasonal variations. The long term trends become easier to spot.
+
+<br />[return to TOC](#table-of-contents-TOC)
 
 * [Kaggle]()
 * [THis Repository]()
@@ -89,4 +112,3 @@ You can see the following files stored in the github repository.
 * [notebook]() - Notebook with Python analysis
 
 <br />[return to TOC](#table-of-contents-TOC)
-
